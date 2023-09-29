@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WELCOME GYAN VIGYAN MELA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        WELCOME GYAN VIGYAN MELA<br /><span class="school"
+          >Chinmaya Vidyalaya Bokaro</span
+        >
+      </h1>
+      <p class="school">₹15 Entry Fee In Quiz Game</p>
+    </header>
+
+    <div id="home" class="page">
+      <button id="start-btn" class="btn" onclick="startQuiz()">
+        Start Quiz
+      </button>
+    </div>
+
+    <div id="quiz" class="page">
+      <h2 id="question"></h2>
+      <div id="choices" class="btn-container"></div>
+      <button id="next-btn" class="btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="results" class="page">
+      <h2>Quiz Results</h2>
+      <p>Your score: <span id="score"></span></p>
+      <h3>Incorrect Answers:</h3>
+      <ul id="incorrect-answers"></ul>
+      <button id="restart-btn" class="btn" onclick="restartQuiz()">
+        Play Again
+      </button>
+    </div>
+
+    <footer>Created by Kushagra Sinha</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
